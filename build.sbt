@@ -1,4 +1,4 @@
-name := "bdc-spark-scala"
+name := "spark-kafka-consumer"
 organization := "com.github.unofficialoraclecloudhub"
 version := "1.0"
 scalaVersion := "2.11.8"
@@ -14,5 +14,6 @@ libraryDependencies ++= Seq(
     "org.apache.spark" %% "spark-sql" % sparkVersion,
     "org.apache.spark" %% "spark-streaming" % sparkVersion,
     "org.apache.spark" %% "spark-streaming-kafka-0-8-assembly" % "2.1.1",
-    "org.apache.spark" %% "spark-hive" % sparkVersion
+    "org.apache.spark" %% "spark-hive" % sparkVersion,
+    "log4j" % "log4j" % "1.2.17"
 )
