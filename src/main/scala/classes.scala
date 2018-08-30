@@ -15,13 +15,13 @@ package com.github.unofficialoraclecloudhub.streaming_data_analytics
 object classes {
     
     case class Tweet(
-        tweet_date: String,
+        date: String,
         text: String, 
         city: String 
     )
     
     case class Survey(
-        survey_date: String,
+        date: String,
         rating: String,
         city: String 
     )
