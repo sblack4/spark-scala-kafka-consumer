@@ -13,10 +13,20 @@ package com.github.unofficialoraclecloudhub.streaming_data_analytics
 */
 
 object classes {
-    
+
+    case class appConfig(
+        broker: String,
+        topic: String,
+        stream: String = "",
+        consumerKey: String = "",
+        consumerSecret: String = "",
+        accessToken: String = "",
+        accessTokenSecret: String = ""
+    )
+
     case class Tweet(
-        date: String,
-        text: String, 
+        day: String,
+        tweet: String,
         city: String 
     )
     
@@ -25,4 +35,6 @@ object classes {
         rating: String,
         city: String 
     )
+
+
 }

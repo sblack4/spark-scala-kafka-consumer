@@ -1,5 +1,7 @@
 .DS_Store
 
+metastore_db
+
 # logs can get REALLY big 
 *.log  
 
@@ -23,3 +25,4 @@ project/plugins/project/
 .history 
 .cache 
 .lib/
+/.metadata/

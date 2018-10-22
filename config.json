@@ -1,0 +1,9 @@
+{
+  "broker": "129.144.154.83:6667",
+  "topic": "idcs-c6319aeb031a417c97ac0f048627b112-conga",
+  "stream": "tweets",
+  "consumerKey": "6vdawFFMZUQXMfGEqVhyOZlEM",
+  "consumerSecret": "1c2aVGTE0cM2mXxi74tt88H7MgY7NlZXkZTziPRTw564fyqr8l",
+  "accessToken": "13405372-immDs258VJbq5OdhwLVLZioxWn37otbMfdrD3kiWg",
+  "accessTokenSecret": "RBDmGu0Ls2GSHWGa7LXq8nrU1AyRdo1bUzHLnQIArlpzs"
+}
