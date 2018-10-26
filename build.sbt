@@ -5,10 +5,13 @@ scalaVersion := "2.11.8"
 
 val sparkVersion = "2.1.0"
 
+// resolvers are places sbt can look to
+// when it needs a jar (other than the default ones)
 resolvers ++= Seq(
   "apache-snapshots" at "http://repository.apache.org/snapshots/"
 )
 
+// these are our dependencies
 libraryDependencies ++= Seq(
     "org.apache.spark" %% "spark-core" % sparkVersion,
     "org.apache.spark" %% "spark-sql" % sparkVersion,

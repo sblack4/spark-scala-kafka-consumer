@@ -1,4 +1,4 @@
-package com.github.unofficialoraclecloudhub.streaming_data_analytics
+package com.github.cloudsolutionhubs.tweetconsumer
 
 import org.apache.spark.rdd
 import org.apache.spark.sql.Dataset
@@ -31,6 +31,19 @@ object handleRdd {
       .insertInto("default.survey")
   }
 
+  /**
+    * TODO: Implement
+    * see https://developer.twitter.com/ and apps.twitter.com
+    *
+    * the data is being pumped into kafka by a python app
+    * https://github.com/cloudsolutionhubs/twitter-kafka-producer
+    * which uses the tweepy library, see
+    * http://docs.tweepy.org/en/stable/streaming_how_to.html#step-2-creating-a-stream
+    * and gets a list of tweet-objects, see
+    * https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/tweet-object
+    *
+    * @param tweetRDD
+    */
   def handleRealTweet(tweetRDD: rdd) = {
 
   }

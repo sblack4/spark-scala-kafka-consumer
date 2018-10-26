@@ -1,4 +1,4 @@
-package com.github.unofficialoraclecloudhub.streaming_data_analytics
+package com.github.cloudsolutionhubs.tweetconsumer
 
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.apache.log4j.{LogManager, Logger}
@@ -39,12 +39,13 @@ object util {
         """
         spark.sql(createSurvey)
 
+      // TODO:
       val realTweet = """
         CREATE TABLE IF NOT EXISTS realTweets (
 
         )
         """
-      spark.sql(createSurvey)
+      spark.sql(realTweet)
     }
 
 

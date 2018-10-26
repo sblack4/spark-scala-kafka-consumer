@@ -1,4 +1,4 @@
-package com.github.unofficialoraclecloudhub.streaming_data_analytics
+package com.github.cloudsolutionhubs.tweetconsumer
 
 import org.apache.spark.streaming._
 

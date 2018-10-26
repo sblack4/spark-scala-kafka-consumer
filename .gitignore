@@ -1,5 +1,12 @@
+
+# IDEs
+.vscode
+.idea
+
+# macs
 .DS_Store
 
+# spark
 metastore_db
 
 # logs can get REALLY big 

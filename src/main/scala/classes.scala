@@ -1,4 +1,4 @@
-package com.github.unofficialoraclecloudhub.streaming_data_analytics
+package com.github.cloudsolutionhubs.tweetconsumer
 
 /*
   ## Avocado Text 
@@ -35,6 +35,9 @@ object classes {
         rating: String,
         city: String 
     )
+
+  // TODO: implement
+    case class RealTweet()
 
 
 }
