@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-BROKER="localhost:6667"
+BROKER="http://127.0.0.1:6667"
 TOPIC="topical"
 STREAM="tweets"
 CLASS="com.github.cloudsolutionhubs.tweetconsumer.main"
@@ -25,7 +25,7 @@ main() {
       --class "${CLASS}" \
       --jars file://${PARENT_DIR}/lib/spark-streaming-kafka-0-8-assembly_2.11-2.1.1.jar \
       --jars file://${PARENT_DIR}/lib/json4s-jackson_2.12-3.2.11.jar \
-      file://${DIR}/target/scala-2.11/spark-kafka-consumer_2.11-1.0.jar ${BROKER} ${TOPIC} ${STREAM}
+      file://${PARENT_DIR}/target/scala-2.11/spark-kafka-consumer_2.11-1.0.jar ${BROKER} ${TOPIC} ${STREAM}
 }
 
 main "$@"

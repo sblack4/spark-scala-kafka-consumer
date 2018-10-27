@@ -1,13 +1,13 @@
 package com.github.cloudsolutionhubs.tweetconsumer
 
-import org.apache.spark.rdd
 import org.apache.spark.sql.Dataset
 import org.apache.spark.sql.functions.{col, expr}
+import classes.{Tweet, Survey, RealTweet}
 
 
 object handleRdd {
 
-  def handleTweet(df: Dataset[classes.Tweet]): Unit = {
+  def handleTweet(df: Dataset[Tweet]): Unit = {
     val tweets = df
       .select(
         expr("day as tweet_date"),
@@ -19,7 +19,7 @@ object handleRdd {
       .insertInto("default.tweets")
   }
 
-  def handleSurvey(df: Dataset[classes.Survey]): Unit = {
+  def handleSurvey(df: Dataset[Survey]): Unit = {
     val tweets = df
       .select(
         expr("date as survey_date"),
@@ -42,9 +42,9 @@ object handleRdd {
     * and gets a list of tweet-objects, see
     * https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/tweet-object
     *
-    * @param tweetRDD
+    * @param df
     */
-  def handleRealTweet(tweetRDD: rdd) = {
+  def handleRealTweet(df: Dataset[RealTweet]): Unit = {
 
   }
 

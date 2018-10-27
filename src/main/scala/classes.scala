@@ -1,15 +1,9 @@
 package com.github.cloudsolutionhubs.tweetconsumer
 
 /*
-  ## Avocado Text 
-  - datetime
-  - text (tweets but actually alice in wonderland)
-  - City
-  
-  ## Avocado Survey 
-  - datetime
-  - rating (0-3)
-  - City
+classes that define our data structures
+for more info on case classes see
+https://docs.scala-lang.org/tour/case-classes.html
 */
 
 object classes {
@@ -36,8 +30,16 @@ object classes {
         city: String 
     )
 
-  // TODO: implement
-    case class RealTweet()
+  // TODO: finish implementing
+  // see https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/intro-to-tweet-json#fundamentals
+    case class RealTweet(created_at: String,
+                          id_str: String,
+                          text: String,
+                          user: Object,
+                         place: Object,
+                         entities: Object,
+                         extended_entities: Object
+                        )
 
 
 }

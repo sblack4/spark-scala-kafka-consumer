@@ -1,6 +1,6 @@
 {
-  "broker": "129.144.154.83:6667",
-  "topic": "idcs-c6319aeb031a417c97ac0f048627b112-conga",
+  "broker": "localhost:6667",
+  "topic": "topical",
   "stream": "tweets",
   "consumerKey": "6vdawFFMZUQXMfGEqVhyOZlEM",
   "consumerSecret": "1c2aVGTE0cM2mXxi74tt88H7MgY7NlZXkZTziPRTw564fyqr8l",
