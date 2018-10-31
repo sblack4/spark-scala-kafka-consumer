@@ -1,7 +1,8 @@
 #!/bin/bash
 
 
-BROKER="localhost:6667"
+BROKER=""
+#BROKER="localhost:6667"
 TOPIC="topical"
 STREAM="tweets"
 CLASS="com.github.cloudsolutionhubs.tweetconsumer.main"
